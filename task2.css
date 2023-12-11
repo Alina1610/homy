@@ -1,0 +1,89 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background-image: url("task2_image/task2_design.jpg"), url('task2_image/task2_design.jpg'), url('task2_image/task2_design.jpg'), url('task2_image/task2_design.jpg'),url('task2_image/task2_design.jpg');
+    background-size: 20%; 
+    height: 150px;        
+}
+.menu{
+background:#008000;
+width:100%;
+height:50px;
+float:left;
+text-align: center;
+padding: 10px; 
+}
+.menu a {
+color:#fbfffb; 
+margin: 15px;
+ font-size: 20px;
+ text-decoration:none;
+
+}
+.menu a:hover{
+	color:#f1eded;
+	background:#000000;
+   }
+   
+p.desc{
+	font-size: 1.25em;
+	padding: 0.125em;
+}
+
+div.gallery {
+  margin: 0.3125em;
+  border: 1px solid #ccc;
+  float: left;
+  width: calc(24.9999% - 0.625em);
+}
+
+div.gallery img{
+	width: 100%;
+	height: 222px;
+}
+
+.center{
+	width: 80%;
+	margin: 0 auto;
+}
+
+@media only screen and (max-width: 767px){
+
+	div.gallery {
+	  margin:  0.9375em;
+	  border: 1px solid #ccc;
+	  float: none;
+	  width: calc(100% - 1.875em);
+	}
+
+	.center{
+		width: 100%;
+	}
+
+	body{
+		font-size: 12px;
+	}
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+	div.gallery {
+	  margin: 0.625em;
+	  border: 1px solid #ccc;
+	  float: left;
+	  width: calc(49.999% - 1.25em);
+	}
+}
+
+@media only screen and (min-width: 2400px){
+	body{
+		font-size: 32px;
+	}
+}
